@@ -1,19 +1,20 @@
 "use strict";
 {
     // oop = class
-    class Animal {
-        constructor(name, species, sound) {
+    var Animal = /** @class */ (function () {
+        function Animal(name, species, sound) {
             this.name = name;
             this.species = species;
             this.sound = sound;
         }
-        makeSound() {
-            console.log(`The ${this.name} says ${this.sound}`);
-        }
-    }
-    const dog = new Animal("German Shepard Bhai", "dog", "Ghew Ghew");
+        Animal.prototype.makeSound = function () {
+            console.log("The ".concat(this.name, " says ").concat(this.sound));
+        };
+        return Animal;
+    }());
+    var dog = new Animal("German Shepard Bhai", "dog", "Ghew Ghew");
     // dog. // after "." -> gives all the property 
-    const cat = new Animal("Peri Siam Bhai", "cat", "Meaw Meaw");
+    var cat = new Animal("Peri Siam Bhai", "cat", "Meaw Meaw");
     // cat. // after "." -> gives all the property 
     cat.makeSound();
     // 
