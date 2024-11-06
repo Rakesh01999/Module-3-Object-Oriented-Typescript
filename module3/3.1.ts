@@ -2,14 +2,16 @@
     // oop = class
     
     class Animal {
-        name: string;
-        species: string;
-        sound: string;
+        // public name: string;
+        // public species: string;
+        // public sound: string;
 
-        constructor(name: string, species:string, sound:string){
-            this.name=name;
-            this.species=species;
-            this.sound=sound;
+        // parameter properties
+
+        constructor(public name: string, public species:string, public sound:string){
+            // this.name=name;
+            // this.species=species;
+            // this.sound=sound;
         }
 
         makeSound(){
@@ -20,9 +22,10 @@
     // dog. // after "." -> gives all the property 
     const cat = new Animal("Peri Siam Bhai", "cat", "Meaw Meaw");
     // cat. // after "." -> gives all the property 
-    
-    cat.makeSound();
 
+    // cat.makeSound();
+    // dog.makeSound();
+    //  cat. // still working [after writing , putting dot -gives all the properties]
 
     // 
 }
