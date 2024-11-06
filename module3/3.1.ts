@@ -20,6 +20,7 @@
     // dog. // after "." -> gives all the property 
     const cat = new Animal("Peri Siam Bhai", "cat", "Meaw Meaw");
     // cat. // after "." -> gives all the property 
+    
     cat.makeSound();
 
 
